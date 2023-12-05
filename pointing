@@ -1,0 +1,9 @@
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+./ngrok authtoken 1wgKrwukywoU5bps6xHSxakBlC6_4g2rXL1U2yr4Rn4bPFLao
+sleep 3
+nohup ./ngrok tcp 443 --region ap &>/dev/null &
+sleep 3
+apk add --no-cache curl
+sleep 3
+curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
