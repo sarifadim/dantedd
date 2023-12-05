@@ -5,6 +5,6 @@ dante:
         SOCKD_USER_NAME: $SOCKD_USER_NAME
         SOCKD_USER_PASSWORD: $SOCKD_USER_PASSWORD
     ports:
-        - $SOCKD_PORT:1080
+        - $SOCKD_PORT:443
     volumes:
         - ./sockd.conf:/etc/sockd.conf
