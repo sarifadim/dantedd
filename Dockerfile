@@ -27,7 +27,7 @@ COPY    sockd.conf /etc/
 
 COPY    docker-entrypoint.sh /
 
-EXPOSE  1080
+EXPOSE  443
 
 ENTRYPOINT  ["/docker-entrypoint.sh"]
 
