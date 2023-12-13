@@ -1,0 +1,15 @@
+{
+    "name": "kulimak",
+    "description": "powered by kulimak",
+    "keywords": ["linar", "batagor", "docker", "sumur"],
+    "repository": "+-",
+    "stack": "container",
+    "env": {
+      "c": {
+        "description": "a"
+      },
+      "P": {
+        "description": "b"
+      }
+    }
+  }
